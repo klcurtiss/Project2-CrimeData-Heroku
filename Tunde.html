@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Crime</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+      <!-- Our CSS  -->
+  
+    <style>
+      body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+    </style>
+
+    
+
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="crimes_data.html">Crime Data</a></li>
+            <li><a href="heatmap.html">US Heatmap</a></li>
+            <li><a href="Angel.html">Leaflet</a></li>
+            <li><a href="Homicide.html">Bubble</a></li>
+            <li><a href="Tunde.html">NJ Crime Rates</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  <!-- Insert HTML division tag to layout the map -->
+  
+  <div id="map" class="container-fluid">
+    <div id="map"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div id="map"></div> -->
+
+    <!-- API key -->
+    <script type="text/javascript" src="config.js"></script>
+
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+    <!-- D3 CDN -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Leaflet-Choropleth JavaScript -->
+    <script type="text/javascript" src="choropleth.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="city.js"></script>
+
+    <!-- Leaflet heatmap plugin-->
+    <script type="text/javascript" src="leaflet-heat.js"></script>
+
+
+
+  </body>
+
+</html>
