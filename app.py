@@ -1,5 +1,5 @@
 # import necessary libraries
-from models import create_classes
+# from models import create_classes
 import os
 from flask import (
     Flask,
@@ -33,7 +33,7 @@ def home():
     return render_template("index.html")
 
 
-# Query the database and send the jsonified results
+""" # Query the database and send the jsonified results
 @app.route("/send", methods=["GET", "POST"])
 def send():
     if request.method == "POST":
@@ -78,3 +78,4 @@ def pals():
 
 if __name__ == "__main__":
     app.run()
+ """
